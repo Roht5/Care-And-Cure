@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CNC.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div>
+                <img src="logo.jpg" alt="">
+            </div>
+        </div>
+        <div class="diddle">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sign" >
+            <button id="myBtn">Sign in</button> 
+            
+        </div>
+    </header>
+    <div>
+
+    </div>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="color: #20b2aa;font-size: 7vh; ;text-align: center; ">
+        Login as,
+    </p>
+    <div class="loginas">
+        <p id="log">Citizen <label for="citizen"><input type="radio" name="login" value="citizen"  id="citizen" style="size: 10px;"></label>&nbsp;&nbsp;Hospital <label for="hospital"><input type="radio" value="hospital" name="login" id="hospital"></label></p>
+    </div>
+    <div style="text-align: center; justify-content: center;">
+        <button id="ok">OK</button>
+    </div>
+    <p id="req" style="text-align: center;color: red;">
+
+    </p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div style="display: flex; border: #20b2aa solid 8px;">
+    <!-- Slideshow container -->
+    <div>
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="1.jpg" style="width:100%; flex: 50%;" alt="">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="2.jpg" style="width:100%" alt="">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="3.jpg" style="width:100%" alt="">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+  <div style="flex: 50%;font-size: 40px; color: #20b2aa; padding: 50px; border: #ffffff solid 8px; max-width: 90%;">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. In commodi ut vel repudiandae, excepturi alias iste nihil mollitia. Accusantium corporis temporibus fugit mollitia in molestias ullam dolorem veritatis minus fugiat.
+  </div>
+</div>
+<br>
+<footer style="float: inline-end; background-color: #20b2ab5d; height: 10vh;">
+    <br>
+    <div style="text-align: center;justify-content: center; font-size: 20px; color: white; text-shadow: #20b2aa;">
+        helpline no.: 9876543210
+    </div>
+</footer>
+<script src="CNC.js"></script>
+<script>
+    var modal = document.getElementById("myModal");
+    var info = document.getElementById("info");
+    var prev = document.getElementById("prev");
+    var next = document.getElementById("next");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    var content= document.getElementsByClassName("modal-content");
+    var ok =document.getElementById("ok");
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+      document.getElementById('req').innerText = ""
+        document.getElementById('citizen').checked = false;
+        document.getElementById('hospital').checked = false;
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        document.getElementById('req').innerText = ""
+        document.getElementById('citizen').checked = false;
+        document.getElementById('hospital').checked = false;
+      }
+    }
+    ok.onclick=function(){
+        if(document.getElementById('citizen').checked == true){
+            info.style.display = "block";
+            modal.style.display = "none";
+            document.getElementById('citizen').checked = false;
+            document.getElementById('req').innerText = ""
+        }else if(document.getElementById('hospital').checked == true){
+            modal.style.display = "none";
+            document.getElementById('hospital').checked = false;
+            document.getElementById('req').innerText = ""
+        }else{
+            document.getElementById('req').innerText = "Select one of the option"
+        }
+    }
+</script>
+</body>
+</html>

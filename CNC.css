@@ -1,0 +1,225 @@
+header{
+    height: 15vh;
+    display: flex;
+    flex: 100%;
+    background-color: #20b2ab31;
+}
+.logo{
+    flex: 35%;
+    text-align: left;
+}
+.logo div img{
+    height: 15vh;
+}
+.diddle{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.sign{
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-right: 0%;
+    flex: 15%;
+    
+}
+
+.sign button{
+    display: flex;
+    border: none;
+    margin-right: 5%;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    float: right;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10%;
+    background-color: #20b2aa;
+}
+.sign button:hover{
+    box-shadow: 0 0 30px #20b2aa;
+}
+.diddle ul{
+    margin-top: 4vh;
+    display: flex;
+    list-style: none;
+}
+.diddle ul li{
+    margin-right: 10vw;
+}
+.diddle ul li a{
+    padding: 4px;
+    font-size: 25px;
+    color: #20b2aa;
+    text-decoration: none;
+}
+.diddle ul li a:hover{
+    background: #20b2aa;
+    color: white;
+    border-radius: 5%;
+}
+.loginas{
+    justify-content: center;
+    text-align: center;
+    font-size: 4vh;
+}
+#ok{
+    width: 5vw;
+    border-radius: 10px;
+    font-size: 4vh;
+    color: white;
+    background-color: #20b2aa;
+    border: none;
+}
+#ok:hover{
+    box-shadow: 0 0 30px #20b2aa;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Slideshow container */
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 50%;
+  }
+  .mySlides{
+      flex: 100%;
+      justify-content: center;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .mySlides img{
+      width: 600px;
+      height: 400px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev{
+      left: 0;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
