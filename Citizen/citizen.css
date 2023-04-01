@@ -1,0 +1,139 @@
+#logo{
+    width: 300px;
+    align-self: center;
+}
+header{
+    background-color: #9fc4c250;
+    display: flex;
+    width: 100%;
+    min-width: fit-content;
+    justify-content: space-between;
+}
+header ul{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header ul li{
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
+    font-size: large;
+    margin-right: 100px;
+    border-bottom: 1.5px solid #9fc4c250;
+}
+.navb:hover {
+    cursor: pointer;
+    color: #20b2aa;
+    border-bottom: 1.5px solid #20b2aa;
+    transition: 0.3s;
+    border-bottom: 1.5px solid #20b2aa;
+}
+#homebtn{
+    color: #20b2aa;
+    border-bottom: 1.5px solid #20b2aa;
+}
+#profile{
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+#profile-pic{
+    border-radius: 50%;
+    width: 80px;
+    background:none;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#profile-pic:hover{
+    transition: 0.2s;
+    width: 90px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+#active{
+    border-bottom: 1.5px solid #20b2aa;
+    transition: 0.2s;
+    color: #20b2aa;
+}
+.offcanvas-body ul{
+    list-style: none;
+}
+.offcanvas-body ul li{
+    padding: 15px;
+    font-size: 20px;
+}
+.offcanvas-body ul li:hover{
+    color: #20b2aa;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 0.1;
+}
+#citizen-homepage{
+    display: block;
+}
+#Find-hospital{
+    display: none;
+}
+#Previous-hospital{
+    display: none;
+}
+#Report-issue{
+    display: none;
+}
+.citizen-main-content{
+    margin-top: 30px;
+    display: flex;
+}
+.nav-mov{
+    flex: 5;
+    padding: 20px;
+}
+.right-side{
+    flex: 2;
+    border-left: 2px solid #20b2ab48;
+}
+.issue-right-citizen{
+    color: #105753;
+    text-align: center;
+}
+.issue-right-citizen .heading p{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #20b2aa;
+}
+.issue-right-citizen .information{
+    padding: 35px;
+    justify-content: space-between;
+    font-size: medium;
+}
+.issue-right-citizen .information button{
+    border: none;
+    background: #20b2aa;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 400;
+}
+.issue-right-citizen .information button:hover{
+    box-shadow:0 0 30px #20b2aa ;
+}
+.issue-right-citizen .information input{
+    border: 2px solid #20b2ab4f;
+}
+#Report-issue{
+    padding: 20px;
+}
+#Report-issue h1{
+    color: #20b2aa;
+}

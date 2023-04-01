@@ -1,0 +1,280 @@
+.topnavselect {
+  display: flex;
+}
+.topnavselect h4 {
+  margin-right: 8vw;
+  padding: 5px;
+}
+.topnavselect h4:hover {
+  background-color: #20b2aa;
+  color: white;
+  border-radius: 5px;
+}
+.signIn:hover {
+  box-shadow: 0 0 30px #20b2aa;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modal-large {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  right: 5px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 50%;
+}
+#myBtn {
+  text-decoration: none;
+  background-color: #20b2aa;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  right: 10px;
+  border: none;
+  text-align: center;
+}
+#myBtn:hover {
+  box-shadow: 0 0 30px #20b2aa;
+}
+#ok{
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 4vh;
+    color: white;
+    padding: 5px;
+    background-color: #20b2aa;
+    border: none;
+}
+#ok:hover{
+    box-shadow: 0 0 30px #20b2aa;
+}
+#adhaar-verification-info-heading{
+  justify-content: center;
+  color: #20b2aa;
+  font-size: 40px;
+  text-align: center;
+}
+.previous{
+  padding: 5px;
+  border: none;
+  color: white;
+  background-color: gray;
+  margin: 10px;
+}
+.next{
+  padding: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(8, 212, 8);
+  margin: 10px;
+}
+.adhaar-box{
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
+}
+#guestlogin{
+  text-decoration: none;
+  background-color: gray;
+  justify-content: center;
+  align-items: center;
+}
+
+.open-card{
+  position: relative;
+  width: 300px;
+  height: 380px;
+  background: #000;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+.open-card:hover{
+  width: 600px;
+}
+.open-card .imgBx{
+  position: relative;
+  min-width: 300px;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.open-card .imgBx img{
+  max-width: 250px;
+  transition: 0.5s ease-in-out;
+}
+.open-card .imgBx h2{
+  color: #4ba9e9;
+  align-items: baseline;
+  justify-content: baseline;
+}
+.open-card .details{
+  position: relative;
+  width: 300px;
+  height: 100%;
+  background: #4ba9e9;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.open-card .details::before{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+
+}
+.details{
+  font-family: "Times New Roman", Times, serif;
+  padding: 20px;
+  align-self: center;
+  color: white;
+}
+.details p{
+  font-size: 25px;
+  font-weight: 600;
+}
+.details span{
+  font-weight: 300;
+  font-size: 20px;
+  opacity: 0.7;
+}
+footer{
+  display: flex;
+}
+footer div img{
+  width: 400px;
+}
+footer div p{
+  font-size: xx-large;
+}
+#citizen-info{
+  width: 700px;
+}
+#citizen-info h2{
+    color: #4ba9e9;
+    text-align: center;
+}
+.content-info-box{
+  display: flex;
+}
+.content-info-box .left{
+  padding: 20px;
+  font-size: large;
+  flex: 1;
+}
+.content-info-box .left div{
+  height: 55px;
+  justify-items: center;
+  align-items: center;
+}
+.content-info-box .right{
+  padding: 20px;
+  border-left: 2px solid #4ba9e9;
+  font-size: large;
+  flex: 1;
+}
+.content-info-box .right div{
+  height: 55px;
+  justify-items: center;
+  align-items: center;
+}
+.info-bottom-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.info-bottom-nav #prevadh{
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #888;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+.info-bottom-nav #prevadh:hover{
+  
+  background-color: rgba(136, 136, 136, 0.664);
+}
+.info-bottom-nav #savedet{
+  
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: rgb(8, 212, 8);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+.info-bottom-nav #savedet:hover{
+  background-color: rgba(8, 212, 8, 0.767);
+}
+#citizen-information-box{
+  max-height: 100%;
+  overflow: hidden;
+}

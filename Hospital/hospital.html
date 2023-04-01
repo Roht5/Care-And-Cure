@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+    <header class="hos-heading">
+        <img src="Photos/logo.jpg" alt="">
+    </header>
+    <div class="navigation-hos">
+        <div id="homeBtn">Home</div>
+        <div id="addPatBtn">Add Patient</div>
+        <div id="getQueBtn">Get Queries</div>
+        <div id="statsBtn">Statistics</div>
+        <div id="profileBtn">Profile</div>
+    </div>
+    <div class="main-body">
+        <div class="main-body-items" id="home">
+            <h1>Home</h1>
+        </div>
+        <div class="main-body-items" id="add-patient">
+            <h1>Add Patient</h1>
+        </div>
+        <div class="main-body-items" id="get-query">
+            <h1>Get Query</h1>
+        </div>
+        <div class="main-body-items" id="statistics">
+            <h1>Statistics</h1>
+        </div>
+        <div class="main-body-items" id="profile">
+            <div class="profile-box">
+                <h1>Profile</h1>
+                <hr>
+                <div class="profile-photo-box">
+                    <div>
+                        <img src="Photos/incognito.png" alt="">
+                        <div class="profile-photo-edit">
+                            &#x1F589;
+                        </div>
+                    </div>
+
+                </div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere et neque necessitatibus fugit, laudantium amet dolor illum dignissimos aliquid nam error vitae voluptates voluptate natus architecto! At perferendis libero quas!
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        var homeBtn=document.getElementById('homeBtn');
+        var addpatBtn=document.getElementById('addPatBtn');
+        var getqueBtn=document.getElementById('getQueBtn');
+        var statsBtn=document.getElementById('statsBtn');
+        var profileBtn=document.getElementById('profileBtn');
+        var home=document.getElementById('home');
+        var addPat=document.getElementById('add-patient');
+        var getQue=document.getElementById('get-query');
+        var stats=document.getElementById('statistics');
+        var profile=document.getElementById('profile');
+        homeBtn.onclick= function(){
+            rese();
+            home.style.display='block';
+        }
+        addpatBtn.onclick= function(){
+            rese();
+            addPat.style.display='block';
+        }
+        getqueBtn.onclick= function(){
+            rese();
+            getQue.style.display='block';
+        }
+        statsBtn.onclick= function(){
+            rese();
+            stats.style.display='block';
+        }
+        profileBtn.onclick= function(){
+            rese();
+            profile.style.display='block';
+        }
+        function rese(){
+            document.getElementById('home').style.display='none'
+            document.getElementById('add-patient').style.display='none'
+            document.getElementById('get-query').style.display='none'
+            document.getElementById('statistics').style.display='none'
+            document.getElementById('profile').style.display='none'
+        }
+    </script>
+</body>
+</html>

@@ -5,17 +5,15 @@ header{
     background-color: #20b2ab31;
 }
 .logo{
+    justify-content: center;
     flex: 35%;
     text-align: left;
 }
 .logo div img{
-    height: 15vh;
+    height: 100px;
 }
 .diddle{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-right: 2vw;
-    padding-left: 2vw;
+    padding: 20px;
     flex: 50%;
     justify-content: center;
     align-items: center;
